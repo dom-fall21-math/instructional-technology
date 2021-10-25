@@ -1,0 +1,19 @@
+name: "Dominican Lectures"
+navbar:
+  title: "Home"
+  left:
+    - text: "About"
+      href: about.html
+    - text: "Math Lecture"
+      href: absolute-values.html
+    - text: "RMarkdown"
+      href: rmarkdown.html
+  right:
+    - icon: fa-envelope fa-lg
+      href: mailto:<you@youremail.com>
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 2
+    theme: sandstone
