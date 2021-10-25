@@ -1,4 +1,5 @@
 name: "Dominican Lectures"
+output_dir: docs
 navbar:
   title: "Home"
   left:
