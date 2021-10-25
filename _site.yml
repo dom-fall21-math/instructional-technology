@@ -6,7 +6,7 @@ navbar:
     - text: "About"
       href: about.html
     - text: "Math Lecture"
-      href: absolute-values.html
+      href: math-lecture.html
     - text: "RMarkdown"
       href: rmarkdown.html
   right:
