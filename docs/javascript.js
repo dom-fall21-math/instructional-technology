@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+=======
+
+
+$(function() {
+  $('.show-button').click(function() {
+    $('.content-div').not('#btn' + $(this).attr('target')).hide();
+    $('#btn' + $(this).attr('target')).fadeToggle(300);
+  });
+});
+
+>>>>>>> 4b526e025cb47dd66ca4a32e314f34117d8ae35a
 
 // GeoGebra Parameters for Graph 
 // Learn more about all of Parameters at: https://wiki.geogebra.org/en/Reference:GeoGebra_App_Parameters
@@ -68,6 +80,7 @@ applet1.setPreviewImage(
   'https://www.geogebra.org/images/applet_play.png'
 );
 
+<<<<<<< HEAD
 $(function() {
   $('.show-button').click(function() {
     $('.content-div').not('#btn' + $(this).attr('target')).hide();
@@ -123,4 +136,6 @@ MathJax = {
     }
   }
 };
+=======
+>>>>>>> 4b526e025cb47dd66ca4a32e314f34117d8ae35a
 
