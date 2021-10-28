@@ -29,9 +29,6 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -223,69 +220,6 @@ $(document).ready(function () {
 
 
 
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-
 
 </head>
 
@@ -293,16 +227,6 @@ div.tocify {
 
 
 <div class="container-fluid main-container">
-
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -320,10 +244,10 @@ div.tocify {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li>
-  <a href="about.html">About</a>
+  <a href="math-lecture.html">Math Lecture</a>
 </li>
 <li>
-  <a href="math-lecture.html">Math Lecture</a>
+  <a href="geogebra.html">GeoGebra</a>
 </li>
 <li>
   <a href="rmarkdown.html">RMarkdown</a>
@@ -331,7 +255,7 @@ div.tocify {
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="mailto:&lt;you@youremail.com&gt;">
+  <a href="mailto:&lt;ambrizjesus74@gmail.com&gt;">
     <span class="fa fa-envelope fa-lg"></span>
      
   </a>
@@ -373,168 +297,63 @@ div.tocify {
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6">
-<script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-<script src="javascript.js"></script>
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-<style>
-    #Set1-1, #Set1-2, #Set1-3, #Set1-4, #Set1-5 {
-      visibility: hidden;
-    }
-</style>
-=======
-<script type="text/javascript">
-  
-  (function () {
-    var n = 1;
-    window.ShowStep1 = function () {
-      document.getElementById("Step1" + "-" + n++).style.visibility = "visible";
-      if (!document.getElementById("Step1" + "-" + n)) {
-        document.getElementById("step1").disabled = true;
-      }
-      document.getElementById("reset1").disabled = false;
-    }
-    window.ResetSteps1 = function () {
-      document.getElementById("step1").disabled = false;
-      document.getElementById("reset1").disabled = true;
-      var i = 1, step1; n = 1;
-      while (step1 = document.getElementById("Step1" + "-" + i)) {
-        step1.style.visibility = "hidden";
-        i++
-      }
-    }
-  })();
-  
-  
-  (function () {
-    var n = 1;
-    window.ShowStep2 = function () {
-      document.getElementById("Step2" + "-" + n++).style.visibility = "visible";
-      if (!document.getElementById("Step2" + "-" + n)) {
-        document.getElementById("step2").disabled = true;
-      }
-      document.getElementById("reset2").disabled = false;
-    }
-    window.ResetSteps2 = function () {
-      document.getElementById("step2").disabled = false;
-      document.getElementById("reset2").disabled = true;
-      var i = 1, step2; n = 1;
-      while (step2 = document.getElementById("Step2" + "-" + i)) {
-        step2.style.visibility = "hidden";
-        i++
-      }
-    }
-  })();
-  
-  
-  (function () {
-    var n = 1;
-    window.ShowStep3 = function () {
-      document.getElementById("Step3" + "-" + n++).style.visibility = "visible";
-      if (!document.getElementById("Step3" + "-" + n)) {
-        document.getElementById("step3").disabled = true;
-      }
-      document.getElementById("reset3").disabled = false;
-    }
-    window.ResetSteps3 = function () {
-      document.getElementById("step3").disabled = false;
-      document.getElementById("reset3").disabled = true;
-      var i = 1, step3; n = 1;
-      while (step3 = document.getElementById("Step3" + "-" + i)) {
-        step3.style.visibility = "hidden";
-        i++
-      }
-    }
-  })();
-</script>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>4b526e025cb47dd66ca4a32e314f34117d8ae35a</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
+<script src="buttonscript.js"></script>
 <!-- CSS Style Scripts -->
 <style>    
     #Step1-1, #Step1-2, #Step1-3, #Step1-4, #Step1-5,
     #Step2-1, #Step2-2, #Step2-3, #Step2-4, #Step2-5,
-    #Step3-1, #Step3-2, #Step3-3, #Step3-4, #Step3-5{
+    #Step3-1, #Step3-2, #Step3-3, #Step3-4, #Step3-5,
+    #Step4-1, #Step4-2, #Step4-3, #Step4-4, #Step4-5,
+    #Step5-1, #Step5-2, #Step5-3, #Step5-4, #Step5-5,
+    #Step6-1, #Step6-2, #Step6-3, #Step6-4, #Step6-5{
       visibility: hidden;
     }
+    hr{
+    border:0.4px solid gray
+    }
+    
+.column-left{
+  padding: 2%;
+  float: left;
+  width: 50%;
+  text-align: left;
+}
+
+.column-right{
+  padding: 2%;
+  float: right;
+  width: 50%;
+  text-align: left;
+}
+.center{
+  display: flex;
+  justify-content: center;
+}
 </style>
 <!-- Home Page Title -->
-<div id="my-awesome-website" class="section level2">
-<h2>My awesome website</h2>
-<p>Insert the following on your yml page under name/title</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<!-- Section GeoGebra -->
-</div>
-<div id="geogebra" class="section level2">
-<h2>GeoGebra</h2>
-<hr />
-<div id="ggbApplet1">
-
-</div>
-<p><br/><br/><br/></p>
+<div id="algebra-math-lecture" class="section level2">
+<h2>Algebra Math Lecture</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+<hr style:"border:2px solid gray"> </hr>
 <!-- Section Chapter 1 -->
 </div>
 <div id="chapter-1" class="section level2">
 <h2>Chapter 1</h2>
-<hr />
 <!-- Subsection Day 1 -->
 <div id="day-1-expression-opperations" class="section level3">
 <h3>Day 1 | Expression &amp; Opperations</h3>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<!-- Subsection Day 1 -->
-</div>
-<div id="day-2-solving-equations-review" class="section level3">
-<h3>Day 2 | Solving Equations Review</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<!-- Subsection Day 1 -->
-</div>
-<div id="day-3-absolute-value-equations" class="section level3">
-<h3>Day 3 | Absolute Value Equations</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<!-- Subsection Day 1 -->
-</div>
-<div id="day-4-solving-inequalities" class="section level3">
-<h3>Day 4 | Solving Inequalities</h3>
+<div class="column-left">
 <!-- Example -->
 <div id="example-3.1" class="section level4">
 <h4>Example 3.1</h4>
-<p><span class="math inline">\(y = |x|\)</span></p>
-<!-- Section Chapter 2 -->
-</div>
-</div>
-</div>
-<div id="chapter-2" class="section level2">
-<h2>Chapter 2</h2>
 <hr />
-<!-- Example -->
-<div id="example-3.1-1" class="section level4">
-<h4>Example 3.1</h4>
 <p><span class="math inline">\(y = |x|\)</span></p>
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD <span class="math display">\[\begin{align}
-  (x+1)^2
-    &amp;= \cssId{Step1}{(x+1)(x+1)}            \\[3px]
-    &amp;\cssId{Step2}{{} = x(x+1) + 1(x+1)}    \\[3px]
-    &amp;\cssId{Step3}{{} = (x^2+x) + (x+1)}    \\[3px]
-    &amp;\cssId{Step4}{{} = x^2 + (x + x) + 1}  \\[3px]
-    &amp;\cssId{Step5}{{} = x^2 + 2x + 1}
-=======
-&lt;p&gt;
-Expand the following:
-\begin{align}
+<div class="center">
+<p>
+Expand the following: <span class="math display">\[\begin{align}
   (x+1)^2
     &amp;= \cssId{Step1-1}{(x+1)(x+1)}            \\[3px]
     &amp;\cssId{Step1-2}{{} = x(x+1) + 1(x+1)}    \\[3px]
@@ -543,9 +362,18 @@ Expand the following:
     &amp;\cssId{Step1-5}{{} = x^2 + 2x + 1}
 \end{align}\]</span>
 </p>
+</div>
 <p>
-<input type="button" onclick="ShowStep1()" value="Show Next Step" id="step1" /> <input type="button" onclick="ResetSteps1()" value="Reset" id="reset1" disabled="true" />
+<input type="button" onclick="ShowStep1()" value="Steps" id="step1" /> <input type="button" onclick="ResetSteps1()" value="Reset" id="reset1" disabled="true" />
 </p>
+<p><br/></p>
+<!-- Example -->
+</div>
+<div id="example-3.2" class="section level4">
+<h4>Example 3.2</h4>
+<hr />
+<p><span class="math inline">\(y = |x|\)</span></p>
+<div class="center">
 <p>
 Expand the following: <span class="math display">\[\begin{align}
   (x+1)^2
@@ -554,54 +382,122 @@ Expand the following: <span class="math display">\[\begin{align}
     &amp;\cssId{Step2-3}{{} = (x^2+x) + (x+1)}    \\[3px]
     &amp;\cssId{Step2-4}{{} = x^2 + (x + x) + 1}  \\[3px]
     &amp;\cssId{Step2-5}{{} = x^2 + 2x + 1}
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; 4b526e025cb47dd66ca4a32e314f34117d8ae35a
 \end{align}\]</span>
 </p>
-<p>
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD <input type="button" onclick="ShowStep()" value="Show Next Step" id="step" /> <input type="button" onclick="ResetSteps()" value="Reset" id="reset" disabled="true" /> ======= <input type="button" onclick="ShowStep2()" value="Show Next Step" id="step2" /> <input type="button" onclick="ResetSteps2()" value="Reset" id="reset2" disabled="true" />
-</p>
 </div>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<blockquote>
-<p>4b526e025cb47dd66ca4a32e314f34117d8ae35a</p>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-</blockquote>
-<p><br/><br/><br/></p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p>
+<input type="button" onclick="ShowStep2()" value="Steps" id="step2" /> <input type="button" onclick="ResetSteps2()" value="Reset" id="reset2" disabled="true" />
+</p>
+<p><br/></p>
 <!-- Example -->
 </div>
-<div id="example-3.1-2" class="section level4">
-<h4>Example 3.1</h4>
+<div id="example-3.3" class="section level4">
+<h4>Example 3.3</h4>
+<hr />
 <p><span class="math inline">\(y = |x|\)</span></p>
-<div>
-<p><span class="math display">\[\begin{align}
+<div class="center">
+<p>
+Expand the following:  <span class="math display">\[\begin{align}
   (x+1)^2
-    &amp;= \cssId{Set1-1}{(x+1)(x+1)}             \\[3px]
-    &amp;\cssId{Set1-2}{ {} = x(x+1) + 1(x+1)}    \\[3px]
-    &amp;\cssId{Set1-3}{ {} = (x^2+x) + (x+1)}    \\[3px]
-    &amp;\cssId{Set1-4}{ {} = x^2 + (x + x) + 1}  \\[3px]
-    &amp;\cssId{Set1-5}{ {} = x^2 + 2x + 1}
-\end{align}\]</span></p>
+    &amp;= \cssId{Step3-1}{(x+1)(x+1)}            \\[3px]
+    &amp;\cssId{Step3-2}{{} = x(x+1) + 1(x+1)}    \\[3px]
+    &amp;\cssId{Step3-3}{{} = (x^2+x) + (x+1)}    \\[3px]
+    &amp;\cssId{Step3-4}{{} = x^2 + (x + x) + 1}  \\[3px]
+    &amp;\cssId{Step3-5}{{} = x^2 + 2x + 1}
+\end{align}\]</span>
+</p>
 </div>
-<p><input type="button" onclick="ShowStep()" value="Show Next Step" target="1" id="step" /> <input type="button" onclick="ResetSteps()" value="Reset" disabled="true" id="reset"  /></p>
-<p><br/><br/><br/></p>
+<p>
+<input type="button" onclick="ShowStep3()" value="Steps" id="step3" /> <input type="button" onclick="ResetSteps3()" value="Reset" id="reset3" disabled="true" />
+</p>
+<p><br/></p>
+</div>
+</div>
+<!-- 
+
+RIGHT COLUMN
+
+-->
+<div class="column-right">
+<!-- Example -->
+<div id="example-3.4" class="section level4">
+<h4>Example 3.4</h4>
+<hr />
+<p><span class="math inline">\(y = |x|\)</span></p>
+<div class="center">
+<p>
+Expand the following: <span class="math display">\[\begin{align}
+  (x+1)^2
+    &amp;= \cssId{Step4-1}{(x+1)(x+1)}            \\[3px]
+    &amp;\cssId{Step4-2}{{} = x(x+1) + 1(x+1)}    \\[3px]
+    &amp;\cssId{Step4-3}{{} = (x^2+x) + (x+1)}    \\[3px]
+    &amp;\cssId{Step4-4}{{} = x^2 + (x + x) + 1}  \\[3px]
+    &amp;\cssId{Step4-5}{{} = x^2 + 2x + 1}
+\end{align}\]</span>
+</p>
+</div>
+<p>
+<input type="button" onclick="ShowStep4()" value="Steps" id="step4" /> <input type="button" onclick="ResetSteps4()" value="Reset" id="reset1" disabled="true" />
+</p>
+<p><br/></p>
+<!-- Example -->
+</div>
+<div id="example-3.5" class="section level4">
+<h4>Example 3.5</h4>
+<hr />
+<p><span class="math inline">\(y = |x|\)</span></p>
+<div class="center">
+<p>
+Expand the following: <span class="math display">\[\begin{align}
+  (x+1)^2
+    &amp;= \cssId{Step5-1}{(x+1)(x+1)}            \\[3px]
+    &amp;\cssId{Step5-2}{{} = x(x+1) + 1(x+1)}    \\[3px]
+    &amp;\cssId{Step5-3}{{} = (x^2+x) + (x+1)}    \\[3px]
+    &amp;\cssId{Step5-4}{{} = x^2 + (x + x) + 1}  \\[3px]
+    &amp;\cssId{Step5-5}{{} = x^2 + 2x + 1}
+\end{align}\]</span>
+</p>
+</div>
+<p>
+<input type="button" onclick="ShowStep5()" value="Steps" id="step5" /> <input type="button" onclick="ResetSteps5()" value="Reset" id="reset5" disabled="true" />
+</p>
+<p><br/></p>
+<!-- Example -->
+</div>
+<div id="example-3.6" class="section level4">
+<h4>Example 3.6</h4>
+<hr />
+<p><span class="math inline">\(y = |x|\)</span></p>
+<div class="center">
+<p>
+Expand the following:  <span class="math display">\[\begin{align}
+  (x+1)^2
+    &amp;= \cssId{Step6-1}{(x+1)(x+1)}            \\[3px]
+    &amp;\cssId{Step6-2}{{} = x(x+1) + 1(x+1)}    \\[3px]
+    &amp;\cssId{Step6-3}{{} = (x^2+x) + (x+1)}    \\[3px]
+    &amp;\cssId{Step6-4}{{} = x^2 + (x + x) + 1}  \\[3px]
+    &amp;\cssId{Step6-5}{{} = x^2 + 2x + 1}
+\end{align}\]</span>
+</p>
+</div>
+<p>
+<input type="button" onclick="ShowStep6()" value="Steps" id="step6" /> <input type="button" onclick="ResetSteps6()" value="Reset" id="reset6" disabled="true" />
+</p>
+<p><br/></p>
+</div>
+</div>
+<hr style:"border:2px solid gray"> </hr>
+<!-- Subsection Day 1 -->
+</div>
+<div id="day-2-solving-equations-review" class="section level3">
+<h3>Day 2 | Solving Equations Review</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p><br/></p>
 </div>
 </div>
 
 
 
-</div>
-</div>
 
 </div>
 
@@ -634,35 +530,6 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
-<script>
-$(document).ready(function ()  {
-
-    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
-    $('.unlisted.unnumbered').addClass('toc-ignore')
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

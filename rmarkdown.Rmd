@@ -1,5 +1,11 @@
 ---
-title: "RMarkdown Page"
+title:
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+    toc_depth: 2
+    theme: sandstone
 ---
 
 ```{r setup, include=FALSE}

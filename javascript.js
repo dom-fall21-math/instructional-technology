@@ -78,12 +78,3 @@ applet1.setPreviewImage(
 );
 
 
-$(function() {
-  $('.show-button').click(function() {
-    $('.content-div').not('#btn' + $(this).attr('target')).hide();
-    $('#btn' + $(this).attr('target')).fadeToggle(300);
-  });
-});
-
-
-

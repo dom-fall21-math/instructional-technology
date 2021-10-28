@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 
 
 $(function() {
@@ -9,7 +7,6 @@ $(function() {
   });
 });
 
->>>>>>> 4b526e025cb47dd66ca4a32e314f34117d8ae35a
 
 // GeoGebra Parameters for Graph 
 // Learn more about all of Parameters at: https://wiki.geogebra.org/en/Reference:GeoGebra_App_Parameters
@@ -80,62 +77,4 @@ applet1.setPreviewImage(
   'https://www.geogebra.org/images/applet_play.png'
 );
 
-<<<<<<< HEAD
-$(function() {
-  $('.show-button').click(function() {
-    $('.content-div').not('#btn' + $(this).attr('target')).hide();
-    $('#btn' + $(this).attr('target')).fadeToggle(300);
-  });
-});
-
-  //  Use a closure to hide the local variable
-  //
-(function () {
-  var n = 1;
-
-  //
-  //  Make the current step be visible, and increment the step.
-  //  If it is the last step, disable the step button.
-  //  Once a step is taken, the reset button is made available.
-  //
-  window.ShowStep = function () {
-    document.getElementById("Set" + $(this).attr('target') + "-" + n++).style.visibility = "visible";
-    if (!document.getElementById("Set" + $(this).attr('target') + "-" + n)) {document.getElementById("step").disabled = true}
-    document.getElementById("reset").disabled = false;
-  }
-
-  //
-  //  Enable the step button and disable the reset button.
-  //  Hide the steps.
-  //
-  window.ResetSteps = function () {
-    document.getElementById("step").disabled = false;
-    document.getElementById("reset").disabled = true;
-    var i = 1, step; n = 1;
-    while (step = document.getElementById("Set" + $(this).attr('target') + "-" + i)) {step.style.visibility = "hidden"; i++}
-  }
-})();
-
-MathJax = {
-  tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
-  chtml: {
-    displayAlign: 'left'
-  },
-  startup: {
-    ready: function () {
-      //
-      //  Do the usual startup (which does a typeset)
-      //
-      MathJax.startup.defaultReady();
-      //
-      //  When that is all done, un-hide the page
-      //
-      MathJax.startup.promise.then(function () {
-        document.getElementById("hidden").disabled = true;
-      });
-    }
-  }
-};
-=======
->>>>>>> 4b526e025cb47dd66ca4a32e314f34117d8ae35a
 
