@@ -353,7 +353,14 @@ div.tocify {
 <!-- JavaScript Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script src="javascript.js"></script>
+<style>
+    #Set1-1, #Set1-2, #Set1-3, #Set1-4, #Set1-5 {
+      visibility: hidden;
+    }
+</style>
 <!-- CSS Style Scripts -->
 <style>.hidden-content{display: none;}</style>
 <!-- Home Page Title -->
@@ -398,25 +405,6 @@ div.tocify {
 <div id="example-3.1" class="section level4">
 <h4>Example 3.1</h4>
 <p><span class="math inline">\(y = |x|\)</span></p>
-<button class="show-button" target="1">
-Show
-</button>
-<div id="btn1" class="content-div hidden-content">
-<p><span class="math display">\[
-    \begin{align}
-        0 &amp;= TR - TC \\
-         TC &amp;= TR \\
-        TR &amp;= TC  \\
-        1.20(q) &amp;= 0.50(q) + 10,000  \\
-        1.20(q) -  0.50(q) &amp;= 10,000 \\
-         0.70(q) &amp;= 10,000 \\
-        \left[\frac{1}{0.70}\right] 0.70(q) &amp;= 10,000 \left[\frac{1}{0.70}\right] \\
-         q &amp;= \frac{10,000}{0.70} \\
-        q &amp;= 14,285
-    \end{align}
-\]</span></p>
-</div>
-<p><br/></p>
 <!-- Section Chapter 2 -->
 </div>
 </div>
@@ -428,26 +416,36 @@ Show
 <div id="example-3.1-1" class="section level4">
 <h4>Example 3.1</h4>
 <p><span class="math inline">\(y = |x|\)</span></p>
-<button class="show-button" target="2">
-Show
-</button>
-<div id="btn2" class="content-div hidden-content">
-<p><span class="math display">\[
-    \begin{align}
-        0 &amp;= TR - TC \\
-         TC &amp;= TR \\
-        TR &amp;= TC  \\
-        1.20(q) &amp;= 0.50(q) + 10,000  \\
-        1.20(q) -  0.50(q) &amp;= 10,000 \\
-         0.70(q) &amp;= 10,000 \\
-        \left[\frac{1}{0.70}\right] 0.70(q) &amp;= 10,000 \left[\frac{1}{0.70}\right] \\
-         q &amp;= \frac{10,000}{0.70} \\
-        q &amp;= 14,285
-    \end{align}
-\]</span></p>
-</div>
+<span class="math display">\[\begin{align}
+  (x+1)^2
+    &amp;= \cssId{Step1}{(x+1)(x+1)}            \\[3px]
+    &amp;\cssId{Step2}{{} = x(x+1) + 1(x+1)}    \\[3px]
+    &amp;\cssId{Step3}{{} = (x^2+x) + (x+1)}    \\[3px]
+    &amp;\cssId{Step4}{{} = x^2 + (x + x) + 1}  \\[3px]
+    &amp;\cssId{Step5}{{} = x^2 + 2x + 1}
+\end{align}\]</span>
+</p>
+<p>
+<p><input type="button" onclick="ShowStep()" value="Show Next Step" id="step" /> <input type="button" onclick="ResetSteps()" value="Reset" id="reset" disabled="true" /></p>
 <p><br/><br/><br/></p>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<!-- Example -->
+</div>
+<div id="example-3.1-2" class="section level4">
+<h4>Example 3.1</h4>
+<p><span class="math inline">\(y = |x|\)</span></p>
+<div>
+<p><span class="math display">\[\begin{align}
+  (x+1)^2
+    &amp;= \cssId{Set1-1}{(x+1)(x+1)}             \\[3px]
+    &amp;\cssId{Set1-2}{ {} = x(x+1) + 1(x+1)}    \\[3px]
+    &amp;\cssId{Set1-3}{ {} = (x^2+x) + (x+1)}    \\[3px]
+    &amp;\cssId{Set1-4}{ {} = x^2 + (x + x) + 1}  \\[3px]
+    &amp;\cssId{Set1-5}{ {} = x^2 + 2x + 1}
+\end{align}\]</span></p>
+</div>
+<p><input type="button" onclick="ShowStep()" value="Show Next Step" target="1" id="step" /> <input type="button" onclick="ResetSteps()" value="Reset" disabled="true" id="reset"  /></p>
+<p><br/><br/><br/></p>
 </div>
 </div>
 
