@@ -1,3 +1,5 @@
+
+
 $(function() {
   $('.show-button').click(function() {
     $('.content-div').not('#btn' + $(this).attr('target')).hide();
@@ -74,4 +76,5 @@ applet1.setPreviewImage(
   'https://www.geogebra.org/images/GeoGebra_loading.png',
   'https://www.geogebra.org/images/applet_play.png'
 );
+
 

@@ -3,12 +3,104 @@ title: "Math Lecture"
 ---
 
 <!-- JavaScript Scripts -->
+<script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+    chtml: {
+      displayAlign: 'left'
+    },
+    startup: {
+      pageReady: function () {
+        //
+        //  Do the usual startup (which does a typeset).
+        //  When that is all done, un-hide the page.
+        //
+        return MathJax.startup.defaultPageReady().then(function () {
+          document.getElementById("hidden").disabled = true;
+        });
+      }
+    }
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6">
 <script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
 <script src="javascript.js"></script>
 
+<script type="text/javascript">
+  
+  (function () {
+    var n = 1;
+    window.ShowStep1 = function () {
+      document.getElementById("Step1" + "-" + n++).style.visibility = "visible";
+      if (!document.getElementById("Step1" + "-" + n)) {
+        document.getElementById("step1").disabled = true;
+      }
+      document.getElementById("reset1").disabled = false;
+    }
+    window.ResetSteps1 = function () {
+      document.getElementById("step1").disabled = false;
+      document.getElementById("reset1").disabled = true;
+      var i = 1, step1; n = 1;
+      while (step1 = document.getElementById("Step1" + "-" + i)) {
+        step1.style.visibility = "hidden";
+        i++
+      }
+    }
+  })();
+  
+  
+  (function () {
+    var n = 1;
+    window.ShowStep2 = function () {
+      document.getElementById("Step2" + "-" + n++).style.visibility = "visible";
+      if (!document.getElementById("Step2" + "-" + n)) {
+        document.getElementById("step2").disabled = true;
+      }
+      document.getElementById("reset2").disabled = false;
+    }
+    window.ResetSteps2 = function () {
+      document.getElementById("step2").disabled = false;
+      document.getElementById("reset2").disabled = true;
+      var i = 1, step2; n = 1;
+      while (step2 = document.getElementById("Step2" + "-" + i)) {
+        step2.style.visibility = "hidden";
+        i++
+      }
+    }
+  })();
+  
+  
+  (function () {
+    var n = 1;
+    window.ShowStep3 = function () {
+      document.getElementById("Step3" + "-" + n++).style.visibility = "visible";
+      if (!document.getElementById("Step3" + "-" + n)) {
+        document.getElementById("step3").disabled = true;
+      }
+      document.getElementById("reset3").disabled = false;
+    }
+    window.ResetSteps3 = function () {
+      document.getElementById("step3").disabled = false;
+      document.getElementById("reset3").disabled = true;
+      var i = 1, step3; n = 1;
+      while (step3 = document.getElementById("Step3" + "-" + i)) {
+        step3.style.visibility = "hidden";
+        i++
+      }
+    }
+  })();
+</script>
+
 <!-- CSS Style Scripts -->
-<style>.hidden-content{display: none;}</style>
+<style>    
+    #Step1-1, #Step1-2, #Step1-3, #Step1-4, #Step1-5,
+    #Step2-1, #Step2-2, #Step2-3, #Step2-4, #Step2-5,
+    #Step3-1, #Step3-2, #Step3-3, #Step3-4, #Step3-5{
+      visibility: hidden;
+    }
+</style>
 
 <!-- Home Page Title -->
 ## My awesome website
@@ -83,21 +175,40 @@ $$
 
 $y = |x|$
 
-<button class="show-button" target="2">Show</button>
-<div id="btn2" class="content-div hidden-content">
-$$
-	\begin{align}
-		0 &= TR - TC \\
-		 TC &= TR \\
-		TR &= TC  \\
-		1.20(q) &= 0.50(q) + 10,000  \\
-		1.20(q) -  0.50(q) &= 10,000 \\
-		 0.70(q) &= 10,000 \\
-		\left[\frac{1}{0.70}\right] 0.70(q) &= 10,000 \left[\frac{1}{0.70}\right] \\
-		 q &= \frac{10,000}{0.70} \\
-		q &= 14,285
-	\end{align}
-$$
+<p>
+Expand the following:
+\begin{align}
+  (x+1)^2
+    &= \cssId{Step1-1}{(x+1)(x+1)}            \\[3px]
+    &\cssId{Step1-2}{{} = x(x+1) + 1(x+1)}    \\[3px]
+    &\cssId{Step1-3}{{} = (x^2+x) + (x+1)}    \\[3px]
+    &\cssId{Step1-4}{{} = x^2 + (x + x) + 1}  \\[3px]
+    &\cssId{Step1-5}{{} = x^2 + 2x + 1}
+\end{align}
+</p>
+
+<p>
+<input type="button" onclick="ShowStep1()" value="Show Next Step" id="step1" />
+<input type="button" onclick="ResetSteps1()" value="Reset" id="reset1" disabled="true" />
+</p>
+
+<p>
+Expand the following:
+\begin{align}
+  (x+1)^2
+    &= \cssId{Step2-1}{(x+1)(x+1)}            \\[3px]
+    &\cssId{Step2-2}{{} = x(x+1) + 1(x+1)}    \\[3px]
+    &\cssId{Step2-3}{{} = (x^2+x) + (x+1)}    \\[3px]
+    &\cssId{Step2-4}{{} = x^2 + (x + x) + 1}  \\[3px]
+    &\cssId{Step2-5}{{} = x^2 + 2x + 1}
+\end{align}
+</p>
+
+<p>
+<input type="button" onclick="ShowStep2()" value="Show Next Step" id="step2" />
+<input type="button" onclick="ResetSteps2()" value="Reset" id="reset2" disabled="true" />
+</p>
+
 </div>
 
 <br/><br/><br/>
