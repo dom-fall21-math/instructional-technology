@@ -25,7 +25,7 @@ output:
       }
     }
   };
-  
+
   (function () {
     window.ShowStep = function (el, id) {
       //go through all the elements with id id-n and set the first non visible one to visible
@@ -58,9 +58,6 @@ output:
 
 <!-- CSS Style Scripts -->
 <style> 
-
-<!-- CSS Button !-->
-
 .button {
   background-color: #bde4ff;
   color: #bde4ff;
@@ -71,6 +68,11 @@ output:
 .button:hover,
 .button:focus {
   background-color: #bde4ff;
+}
+
+body{
+  font-family: Helvetica;
+  font-size: 16pt;
 }
 
 h2{
@@ -115,25 +117,24 @@ In this lesson, we will cover **logs**, or logarithms. Logs can seem pretty scar
 
 Logs can do many wonderful things. They allow us to work with problems that grow exponentially. Essentially, logs can be seen as **the inverse function to exponents**. Since addition, multiplication, and exponentiation are the three most fundamental arithmetic operations, we us logs to help us find the exponents. The inverse of addition is subtraction, the inverse of multiplication is division, and the inverse of exponents are logarithms.
 
-Logs were initially invented in the 17th century to speed up calculations and for this reason, many modern day scientist have adopted it. Before calculators and computers became available, logarithms were vastly used to **reduced the time needed to multiply numbers with many digits**. Today, it is used for astronomy, physics, biology, engineering, and many more!
+Logs were initially invented in the 17th century to speed up calculations and for this reason, many modern day scientist have adopted it. Before calculators and computers became available, logarithms were used to vastly **reduced the time needed to multiply numbers with many digits**. Today, it is used for astronomy, physics, biology, engineering, and many more!
 
 <hr style:"border:2px solid gray"> </hr> </br>
 
 <!-- Subsection Day 1 -->
 #### Mathematical Expression
 
-**Note:** We still want to solve for **X**.
-<div class="center">
-\begin{align}
-    & \text{Exponent Form}  & \text{Logarithmic Form}        \\[3px]
-    b^x = n & x =log_b n 
-\end{align}
-</div>
+**Note:** We still want to solve for **X**. 
 
-<p>
-<input type="button" class="button" onclick="ShowStep(this, 'Step7', 'Reset7');" value="Steps" /> 
-<input type="button" class="button" onclick="ResetSteps(this, 'Step7', 'Reset7')" value="Reset" disabled="false"/>
-</p>
+<div class="center">
+\begin{array}{cc}
+  \large\text{Exponential Expression} & \large\text{Logarithmic Expression} \\[10pt]
+ \large b^x = n & \large log_b n = x
+\end{array}
+</div>	
+
+
+<hr style:"border:2px solid gray"> </hr> </br>
 
 <!-- LELF COLUMN -->
 <div class="column-left">

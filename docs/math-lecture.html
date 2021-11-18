@@ -13,7 +13,7 @@
 
 <title>Math Lecture</title>
 
-<script src="site_libs/header-attrs-2.11.3/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/sandstone.min.css" rel="stylesheet" />
@@ -294,7 +294,7 @@ $(document).ready(function () {
       }
     }
   };
-  
+
   (function () {
     window.ShowStep = function (el, id) {
       //go through all the elements with id id-n and set the first non visible one to visible
@@ -325,9 +325,6 @@ $(document).ready(function () {
 <script src="buttonscript.js"></script>
 <!-- CSS Style Scripts -->
 <style> 
-
-<!-- CSS Button !-->
-
 .button {
   background-color: #bde4ff;
   color: #bde4ff;
@@ -338,6 +335,11 @@ $(document).ready(function () {
 .button:hover,
 .button:focus {
   background-color: #bde4ff;
+}
+
+body{
+  font-family: Helvetica;
+  font-size: 16pt;
 }
 
 h2{
@@ -379,23 +381,22 @@ h2{
 <div id="so-what-are-logs" class="section level4">
 <h4>So what are Logs?</h4>
 <p>Logs can do many wonderful things. They allow us to work with problems that grow exponentially. Essentially, logs can be seen as <strong>the inverse function to exponents</strong>. Since addition, multiplication, and exponentiation are the three most fundamental arithmetic operations, we us logs to help us find the exponents. The inverse of addition is subtraction, the inverse of multiplication is division, and the inverse of exponents are logarithms.</p>
-<p>Logs were initially invented in the 17th century to speed up calculations and for this reason, many modern day scientist have adopted it. Before calculators and computers became available, logarithms were vastly used to <strong>reduced the time needed to multiply numbers with many digits</strong>. Today, it is used for astronomy, physics, biology, engineering, and many more!</p>
+<p>Logs were initially invented in the 17th century to speed up calculations and for this reason, many modern day scientist have adopted it. Before calculators and computers became available, logarithms were used to vastly <strong>reduced the time needed to multiply numbers with many digits</strong>. Today, it is used for astronomy, physics, biology, engineering, and many more!</p>
 <hr style:"border:2px solid gray"> </hr>
 <p></br></p>
 <!-- Subsection Day 1 -->
 </div>
 <div id="mathematical-expression" class="section level4">
 <h4>Mathematical Expression</h4>
-<strong>Note:</strong> We still want to solve for <strong>X</strong>.
+<p><strong>Note:</strong> We still want to solve for <strong>X</strong>.</p>
 <div class="center">
-<p><span class="math display">\[\begin{align}
-    &amp; \text{Exponent Form}  &amp; \text{Logarithmic Form}        \\[3px]
-    b^x = n &amp; x =log_b n 
-\end{align}\]</span></p>
+<span class="math display">\[\begin{array}{cc}
+  \large\text{Exponential Expression} &amp; \large\text{Logarithmic Expression} \\[10pt]
+ \large b^x = n &amp; \large log_b n = x
+\end{array}\]</span>
 </div>
-<p>
-<input type="button" class="button" onclick="ShowStep(this, 'Step7', 'Reset7');" value="Steps" /> <input type="button" class="button" onclick="ResetSteps(this, 'Step7', 'Reset7')" value="Reset" disabled="false"/>
-</p>
+<hr style:"border:2px solid gray"> </hr>
+<p></br></p>
 <!-- LELF COLUMN -->
 <div class="column-left">
 <!-- Example -->
