@@ -274,6 +274,7 @@ $(document).ready(function () {
 </div>
 
 
+<!-- IMPORTANT -->
 <!-- JavaScript Scripts -->
 <script>
   MathJax = {
@@ -293,6 +294,28 @@ $(document).ready(function () {
       }
     }
   };
+  
+  (function () {
+    window.ShowStep = function (el, id) {
+      //go through all the elements with id id-n and set the first non visible one to visible
+      const steps = document.querySelectorAll('[id^="' + id + '"]');
+      for (let i = 0; i < steps.length; i++) {
+         if (steps[i].style.visibility != 'visible') {
+           steps[i].style.visibility = 'visible';
+           break;
+         }
+       }
+      el.nextElementSibling.disabled = false;
+    }
+    window.ResetSteps = function (el, id, Reset) {
+      el.disabled = false;
+      //go through all the elements with id id-n and set them all to hidden
+      const steps = document.querySelectorAll('[id^="' + id + '"]');
+      for (let i = 0; i < steps.length; i++) {
+           steps[i].style.visibility = 'hidden';
+         }      
+    } 
+  })();
   </script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -301,16 +324,23 @@ $(document).ready(function () {
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script src="buttonscript.js"></script>
 <!-- CSS Style Scripts -->
-<style>    
-    #Step1-1, #Step1-2, #Step1-3, #Step1-4, #Step1-5,
-    #Step2-1, #Step2-2, #Step2-3, #Step2-4, #Step2-5,
-    #Step3-1, #Step3-2, #Step3-3, #Step3-4, #Step3-5,
-    #Step4-1, #Step4-2, #Step4-3, #Step4-4, #Step4-5,
-    #Step5-1, #Step5-2, #Step5-3, #Step5-4, #Step5-5,
-    #Step6-1, #Step6-2, #Step6-3, #Step6-4, #Step6-5{
-      visibility: hidden;
-    }
-    hr{
+<style> 
+
+<!-- CSS Button !-->
+
+.button {
+  background-color: #bde4ff;
+  color: #bde4ff;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #bde4ff;
+}
+
+  hr{
     border:0.4px solid gray
     }
     
@@ -344,7 +374,20 @@ $(document).ready(function () {
 <!-- Subsection Day 1 -->
 <div id="day-1-expression-opperations" class="section level3">
 <h3>Day 1 | Expression &amp; Opperations</h3>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div class="center">
+<p><span class="math display">\[\begin{align}
+  log_2 (16)
+    &amp;= \cssId{Step7-1}{(x+1)(x+1)}  &amp; \text{ _____ to the power of 2 makes 16?}        \\[3px]
+    &amp;\cssId{Step7-2}{ = x(x+1) + 1(x+1)}    \\[3px]
+    &amp;\cssId{Step7-3}{ = (x^2+x) + (x+1)}    \\[3px]
+    &amp;\cssId{Step7-5}{ = x^2 + (x + x) + 1}  \\[3px]
+    &amp;\cssId{Step7-6}{ = x^2 + 2x + 1}
+\end{align}\]</span></p>
+</div>
+<p>
+<input type="button" class="button" onclick="ShowStep(this, 'Step7', 'Reset7');" value="Steps" /> <input type="button" class="button" onclick="ResetSteps(this, 'Step7', 'Reset7')" value="Reset" disabled="false"/>
+</p>
+<!-- LELF COLUMN -->
 <div class="column-left">
 <!-- Example -->
 <div id="example-3.1" class="section level4">
@@ -354,7 +397,7 @@ $(document).ready(function () {
 <div class="center">
 <p>
 Expand the following: <span class="math display">\[\begin{align}
-  (x+1)^2
+  log_2 (16)
     &amp;= \cssId{Step1-1}{(x+1)(x+1)}            \\[3px]
     &amp;\cssId{Step1-2}{{} = x(x+1) + 1(x+1)}    \\[3px]
     &amp;\cssId{Step1-3}{{} = (x^2+x) + (x+1)}    \\[3px]
@@ -364,7 +407,7 @@ Expand the following: <span class="math display">\[\begin{align}
 </p>
 </div>
 <p>
-<input type="button" onclick="ShowStep1()" value="Steps" id="step1" /> <input type="button" onclick="ResetSteps1()" value="Reset" id="reset1" disabled="true" />
+<input type="button" onclick="ShowStep(this, 'Step1', 'Reset1');" value="Steps" /> <input type="button"  onclick="ResetSteps(this, 'Step1', 'Reset1')" value="Reset" disabled="false"/>
 </p>
 <p><br/></p>
 <!-- Example -->
@@ -386,7 +429,7 @@ Expand the following: <span class="math display">\[\begin{align}
 </p>
 </div>
 <p>
-<input type="button" onclick="ShowStep2()" value="Steps" id="step2" /> <input type="button" onclick="ResetSteps2()" value="Reset" id="reset2" disabled="true" />
+<input type="button" onclick="ShowStep(this, 'Step2', 'Reset2');" value="Steps"/> <input type="button" onclick="ResetSteps(this, 'Step2', 'Reset2')" value="Reset" disabled="true"/>
 </p>
 <p><br/></p>
 <!-- Example -->
@@ -408,16 +451,12 @@ Expand the following:  <span class="math display">\[\begin{align}
 </p>
 </div>
 <p>
-<input type="button" onclick="ShowStep3()" value="Steps" id="step3" /> <input type="button" onclick="ResetSteps3()" value="Reset" id="reset3" disabled="true" />
+<input type="button" onclick="ShowStep(this, 'Step3', 'Reset3');" value="Steps"/> <input type="button" onclick="ResetSteps(this, 'Step3', 'Reset3')" value="Reset" disabled="true"/>
 </p>
 <p><br/></p>
 </div>
 </div>
-<!-- 
-
-RIGHT COLUMN
-
--->
+<!-- RIGHT COLUMN -->
 <div class="column-right">
 <!-- Example -->
 <div id="example-3.4" class="section level4">
@@ -437,7 +476,7 @@ Expand the following: <span class="math display">\[\begin{align}
 </p>
 </div>
 <p>
-<input type="button" onclick="ShowStep4()" value="Steps" id="step4" /> <input type="button" onclick="ResetSteps4()" value="Reset" id="reset4" disabled="true" />
+<input type="button" onclick="ShowStep(this, 'Step4', 'Reset4');" value="Steps"/> <input type="button" onclick="ResetSteps(this, 'Step4', 'Reset4')" value="Reset" disabled="true"/>
 </p>
 <p><br/></p>
 <!-- Example -->
@@ -459,7 +498,7 @@ Expand the following: <span class="math display">\[\begin{align}
 </p>
 </div>
 <p>
-<input type="button" onclick="ShowStep5()" value="Steps" id="step5" /> <input type="button" onclick="ResetSteps5()" value="Reset" id="reset5" disabled="true" />
+<input type="button" onclick="ShowStep(this, 'Step5', 'Reset5');" value="Steps"/> <input type="button" onclick="ResetSteps(this, 'Step5', 'Reset5')" value="Reset" disabled="true"/>
 </p>
 <p><br/></p>
 <!-- Example -->
@@ -481,7 +520,7 @@ Expand the following:  <span class="math display">\[\begin{align}
 </p>
 </div>
 <p>
-<input type="button" onclick="ShowStep6()" value="Steps" id="step6" /> <input type="button" onclick="ResetSteps6()" value="Reset" id="reset6" disabled="true" />
+<input type="button" onclick="ShowStep(this, 'Step6', 'Reset6');" value="Steps"/> <input type="button" onclick="ResetSteps(this, 'Step6', 'Reset6')" value="Reset" disabled="true"/>
 </p>
 <p><br/></p>
 </div>

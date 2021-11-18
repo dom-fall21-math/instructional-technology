@@ -5,6 +5,7 @@ output:
     theme: sandstone
 ---
 
+<!-- IMPORTANT -->
 <!-- JavaScript Scripts -->
 <script>
   MathJax = {
@@ -24,6 +25,28 @@ output:
       }
     }
   };
+  
+  (function () {
+    window.ShowStep = function (el, id) {
+      //go through all the elements with id id-n and set the first non visible one to visible
+      const steps = document.querySelectorAll('[id^="' + id + '"]');
+      for (let i = 0; i < steps.length; i++) {
+         if (steps[i].style.visibility != 'visible') {
+           steps[i].style.visibility = 'visible';
+           break;
+         }
+       }
+      el.nextElementSibling.disabled = false;
+    }
+    window.ResetSteps = function (el, id, Reset) {
+      el.disabled = false;
+      //go through all the elements with id id-n and set them all to hidden
+      const steps = document.querySelectorAll('[id^="' + id + '"]');
+      for (let i = 0; i < steps.length; i++) {
+           steps[i].style.visibility = 'hidden';
+         }      
+    } 
+  })();
   </script>
   
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
@@ -34,16 +57,23 @@ output:
 <script src="buttonscript.js"></script>
 
 <!-- CSS Style Scripts -->
-<style>    
-    #Step1-1, #Step1-2, #Step1-3, #Step1-4, #Step1-5,
-    #Step2-1, #Step2-2, #Step2-3, #Step2-4, #Step2-5,
-    #Step3-1, #Step3-2, #Step3-3, #Step3-4, #Step3-5,
-    #Step4-1, #Step4-2, #Step4-3, #Step4-4, #Step4-5,
-    #Step5-1, #Step5-2, #Step5-3, #Step5-4, #Step5-5,
-    #Step6-1, #Step6-2, #Step6-3, #Step6-4, #Step6-5{
-      visibility: hidden;
-    }
-    hr{
+<style> 
+
+<!-- CSS Button !-->
+
+.button {
+  background-color: #bde4ff;
+  color: #bde4ff;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #bde4ff;
+}
+
+  hr{
     border:0.4px solid gray
     }
     
@@ -80,10 +110,25 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 <!-- Subsection Day 1 -->
 ### Day 1 | Expression & Opperations
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<div class="center">
+\begin{align}
+  log_2 (16)
+    &= \cssId{Step7-1}{(x+1)(x+1)}  & \text{ _____ to the power of 2 makes 16?}        \\[3px]
+    &\cssId{Step7-2}{ = x(x+1) + 1(x+1)}    \\[3px]
+    &\cssId{Step7-3}{ = (x^2+x) + (x+1)}    \\[3px]
+    &\cssId{Step7-5}{ = x^2 + (x + x) + 1}  \\[3px]
+    &\cssId{Step7-6}{ = x^2 + 2x + 1}
+\end{align}
+</div>
 
+<p>
+<input type="button" class="button" onclick="ShowStep(this, 'Step7', 'Reset7');" value="Steps" /> 
+<input type="button" class="button" onclick="ResetSteps(this, 'Step7', 'Reset7')" value="Reset" disabled="false"/>
+</p>
 
+<!-- LELF COLUMN -->
 <div class="column-left">
+
 <!-- Example -->
 #### Example 3.1 
 
@@ -95,7 +140,7 @@ $y = |x|$
 <p>
 Expand the following:
 \begin{align}
-  (x+1)^2
+  log_2 (16)
     &= \cssId{Step1-1}{(x+1)(x+1)}            \\[3px]
     &\cssId{Step1-2}{{} = x(x+1) + 1(x+1)}    \\[3px]
     &\cssId{Step1-3}{{} = (x^2+x) + (x+1)}    \\[3px]
@@ -106,8 +151,8 @@ Expand the following:
 </div>
 
 <p>
-<input type="button" onclick="ShowStep1()" value="Steps" id="step1" />
-<input type="button" onclick="ResetSteps1()" value="Reset" id="reset1" disabled="true" />
+<input type="button" onclick="ShowStep(this, 'Step1', 'Reset1');" value="Steps" /> 
+<input type="button"  onclick="ResetSteps(this, 'Step1', 'Reset1')" value="Reset" disabled="false"/>
 </p>
 
 <br/>
@@ -134,8 +179,8 @@ Expand the following:
 </div>
 
 <p>
-<input type="button" onclick="ShowStep2()" value="Steps" id="step2" />
-<input type="button" onclick="ResetSteps2()" value="Reset" id="reset2" disabled="true" />
+<input type="button" onclick="ShowStep(this, 'Step2', 'Reset2');" value="Steps"/> 
+<input type="button" onclick="ResetSteps(this, 'Step2', 'Reset2')" value="Reset" disabled="true"/>
 </p>
 
 <br/>
@@ -163,21 +208,18 @@ Expand the following:
 </div>
 
 <p>
-<input type="button" onclick="ShowStep3()" value="Steps" id="step3" />
-<input type="button" onclick="ResetSteps3()" value="Reset" id="reset3" disabled="true" />
+<input type="button" onclick="ShowStep(this, 'Step3', 'Reset3');" value="Steps"/> 
+<input type="button" onclick="ResetSteps(this, 'Step3', 'Reset3')" value="Reset" disabled="true"/>
 </p>
 
 <br/>
 </div>
 
 
-<!-- 
-
-RIGHT COLUMN
-
--->
-
+<!-- RIGHT COLUMN -->
 <div class="column-right">
+
+
 <!-- Example -->
 #### Example 3.4 
 
@@ -200,8 +242,8 @@ Expand the following:
 </div>
 
 <p>
-<input type="button" onclick="ShowStep4()" value="Steps" id="step4" />
-<input type="button" onclick="ResetSteps4()" value="Reset" id="reset4" disabled="true" />
+<input type="button" onclick="ShowStep(this, 'Step4', 'Reset4');" value="Steps"/> 
+<input type="button" onclick="ResetSteps(this, 'Step4', 'Reset4')" value="Reset" disabled="true"/>
 </p>
 
 <br/>
@@ -228,8 +270,8 @@ Expand the following:
 </div>
 
 <p>
-<input type="button" onclick="ShowStep5()" value="Steps" id="step5" />
-<input type="button" onclick="ResetSteps5()" value="Reset" id="reset5" disabled="true" />
+<input type="button" onclick="ShowStep(this, 'Step5', 'Reset5');" value="Steps"/> 
+<input type="button" onclick="ResetSteps(this, 'Step5', 'Reset5')" value="Reset" disabled="true"/>
 </p>
 
 <br/>
@@ -257,8 +299,8 @@ Expand the following:
 </div>
 
 <p>
-<input type="button" onclick="ShowStep6()" value="Steps" id="step6" />
-<input type="button" onclick="ResetSteps6()" value="Reset" id="reset6" disabled="true" />
+<input type="button" onclick="ShowStep(this, 'Step6', 'Reset6');" value="Steps"/> 
+<input type="button" onclick="ResetSteps(this, 'Step6', 'Reset6')" value="Reset" disabled="true"/>
 </p>
 
 <br/>
