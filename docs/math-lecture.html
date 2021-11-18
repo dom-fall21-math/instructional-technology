@@ -325,6 +325,10 @@ $(document).ready(function () {
 <script src="buttonscript.js"></script>
 <!-- CSS Style Scripts -->
 <style> 
+@media (min-width: 768px)
+.col-sm-6 {
+    width: 100%;
+}
 .button {
   background-color: #bde4ff;
   color: #bde4ff;
@@ -339,13 +343,30 @@ $(document).ready(function () {
 
 body{
   font-family: Helvetica;
-  font-size: 16pt;
+  font-size: 14pt;
 }
 
+h1, h2, h3, h4, h5, h6{
+}
+
+h1{
+ font-size: 24pt;
+}
 h2{
- text-align: center;
+ font-size: 20pt;
 }
-
+h3{
+ font-size: 18pt;
+}
+h4{
+ font-size: 16pt;
+}
+h5{
+ font-size: 14pt;
+}
+h6{
+ font-size: 12pt;
+}
   hr{
     border:0.4px solid gray
     }
@@ -369,8 +390,8 @@ h2{
 }
 </style>
 <!-- Home Page Title -->
-<div id="the-dominican-math-lesson" class="section level2">
-<h2>The Dominican Math Lesson</h2>
+<div id="the-dominican-math-lesson" class="section level1">
+<h1>The Dominican Math Lesson</h1>
 <div class="center">
 <p><strong>By:</strong> The Fibonacci Fighters</p>
 </div>
@@ -381,7 +402,7 @@ h2{
 <div id="so-what-are-logs" class="section level4">
 <h4>So what are Logs?</h4>
 <p>Logs can do many wonderful things. They allow us to work with problems that grow exponentially. Essentially, logs can be seen as <strong>the inverse function to exponents</strong>. Since addition, multiplication, and exponentiation are the three most fundamental arithmetic operations, we us logs to help us find the exponents. The inverse of addition is subtraction, the inverse of multiplication is division, and the inverse of exponents are logarithms.</p>
-<p>Logs were initially invented in the 17th century to speed up calculations and for this reason, many modern day scientist have adopted it. Before calculators and computers became available, logarithms were used to vastly <strong>reduced the time needed to multiply numbers with many digits</strong>. Today, it is used for astronomy, physics, biology, engineering, and many more!</p>
+<p>Logs were initially invented in the 17th century to speed up calculations and for this reason, many modern day scientist have adopted it. Before calculators and computers became available, logarithms were used to vastly <em>reduced the time needed to multiply numbers with many digits</em>. Today, it is used for astronomy, physics, biology, engineering, and many more!</p>
 <hr style:"border:2px solid gray"> </hr>
 <p></br></p>
 <!-- Subsection Day 1 -->
@@ -398,7 +419,7 @@ h2{
 <hr style:"border:2px solid gray"> </hr>
 <p></br></p>
 <!-- LELF COLUMN -->
-<div class="column-left">
+<div class="col-sm-6">
 <!-- Example -->
 <div id="example-3.1" class="section level5">
 <h5>Example 3.1</h5>
@@ -467,7 +488,7 @@ Expand the following:  <span class="math display">\[\begin{align}
 </div>
 </div>
 <!-- RIGHT COLUMN -->
-<div class="column-right">
+<div class="col-sm-6">
 <!-- Example -->
 <div id="example-3.4" class="section level5">
 <h5>Example 3.4</h5>
