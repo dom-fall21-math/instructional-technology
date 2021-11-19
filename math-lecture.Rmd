@@ -37,9 +37,12 @@ Logs were initially invented in the 17th century to speed up calculations and fo
 <div class="col-sm-6">  
 <div class="center">
 \begin{array}{cc}
-  \text{Exponents} & & \text{Logarithm} \\[10pt]
-    b^x = n & & log_b n = x
+  \text{Logarithm} & & \text{Exponents} \\[10pt]
+    log_b n = x & & b^x = n \\[10pt]
+    log_{10} 1000 = x & & 10^x = 1000 \\[10pt]
+    log_{10} 1000 = 3 & & 10^3 = 1000
 \end{array}
+<br/><br/><br/><br/><br/>
 </div>
 </div>
 

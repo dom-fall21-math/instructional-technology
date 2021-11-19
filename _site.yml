@@ -8,7 +8,7 @@ navbar:
     - text: "GeoGebra"
       href: geogebra.html
     - text: "Source Code"
-      href: rmarkdown.html
+      href: source-code.html
   right:
     - icon: fa-envelope fa-lg
       href: mailto:<ambrizjesus74@gmail.com>
