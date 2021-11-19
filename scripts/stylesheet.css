@@ -44,6 +44,18 @@ hr{
   justify-content: center;
 }
 
+#Step1-1, #Step1-2, #Step1-3, #Step1-4, #Step1-5, #Step1-6, #Step1-7,
+#Step2-1, #Step2-2, #Step2-3, #Step2-4, #Step2-5, #Step2-6, #Step2-7,
+#Step3-1, #Step3-2, #Step3-3, #Step3-4, #Step3-5, #Step3-6, #Step3-7,
+#Step4-1, #Step4-2, #Step4-3, #Step4-4, #Step4-5, #Step4-6, #Step4-7,
+#Step5-1, #Step5-2, #Step5-3, #Step5-4, #Step5-5, #Step5-6, #Step5-7,
+#Step6-1, #Step6-2, #Step6-3, #Step6-4, #Step6-5, #Step6-6, #Step6-7,
+#Step7-1, #Step7-2, #Step7-3, #Step7-4, #Step7-5, #Step7-6, #Step7-7,
+#Step8-1, #Step8-2, #Step8-3, #Step8-4, #Step8-5, #Step8-6, #Step8-7{
+  visibility: hidden;
+  color: #FF69B4;
+}
+
 .column-left{
   padding: 2%;
   float: left;
