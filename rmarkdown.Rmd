@@ -1,5 +1,5 @@
 ---
-title: R Markdown
+title: Source Code
 output: 
   html_document:
     toc: true
@@ -8,7 +8,7 @@ output:
     theme: sandstone
 ---
 
-<link href=".\scripts\stylesheet.css" rel="stylesheet">
+<link rel="stylesheet" href=".\scripts\stylesheet.css">
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)

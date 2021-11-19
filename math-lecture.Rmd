@@ -1,25 +1,27 @@
 ---
-title: Dominican Math Lesson
+title:
 output: 
   html_document:
     theme: sandstone
 ---
-<!-- Scripts -->
-<link href=".\scripts\stylesheet.css" rel="stylesheet">
+
+<link rel="stylesheet" href=".\scripts\stylesheet.css">
 <script src=".\scripts\javascript.js"></script>  
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
-<script src="https://polyfill.io/v3/polyfill.min.js?features=es6">
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 
-<!-- Section Lesson 1 -->
-## Lesson 1: Logarithms
+</br></br></br>
+
+# Math Lecture
+
+
+## Unit 1: Logarithms
 
 In this lesson, we will cover **logs**, or logarithms. Logs can seem pretty scary at first, but once completing this lesson, you will become a master! 
 
-#### So what are Logs?
+### So what are Logs?
 
 Logs can help us do many wonderful things. They allow us to work with problems that grow exponentially. Essentially, **logs** can be seen as **the inverse function to exponents**. Since addition, multiplication, and exponentiation are the three most fundamental arithmetic operations, we us logs to help us find the exponents. The inverse of addition is subtraction, the inverse of multiplication is division, and the inverse of exponents are logarithms.
 
@@ -28,7 +30,7 @@ Logs were initially invented in the 17th century to speed up calculations and fo
 <hr style:"border:2px solid gray"> </hr> 
 
 <!-- Subsection Day 1 -->
-## Mathematical Expression
+## Math Expression
 
 **Note:** We still want to solve for **X**. 
 
@@ -187,7 +189,7 @@ $y = |x|$
 ---
 
 <!-- Subsection Day 1 -->
-## **Lesson 2:** Natural Logarithms
+## Unit 2: Natural Logarithms
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
