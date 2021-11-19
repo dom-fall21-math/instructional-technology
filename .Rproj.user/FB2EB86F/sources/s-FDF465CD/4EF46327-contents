@@ -17,7 +17,7 @@ output:
 # Math Lecture
 
 
-## Unit 1: Logarithms
+## Logarithms
 
 In this lesson, we will cover **logs**, or logarithms. Logs can seem pretty scary at first, but once completing this lesson, you will become a master! 
 
@@ -30,7 +30,7 @@ Logs were initially invented in the 17th century to speed up calculations and fo
 <hr style:"border:2px solid gray"> </hr> 
 
 <!-- Subsection Day 1 -->
-## Math Expression
+### Math Expression
 
 **Note:** We still want to solve for **X**. 
 
@@ -189,7 +189,7 @@ $y = |x|$
 ---
 
 <!-- Subsection Day 1 -->
-## Unit 2: Natural Logarithms
+## Natural Logarithms
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
