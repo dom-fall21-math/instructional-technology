@@ -1,0 +1,14 @@
+name: "Dominican Lectures"
+output_dir: docs
+navbar:
+  title: "Home"
+  left:
+    - text: "Math Lecture"
+      href: math-lecture.html
+    - text: "GeoGebra"
+      href: geogebra.html
+    - text: "Source Code"
+      href: rmarkdown.html
+  right:
+    - icon: fa-envelope fa-lg
+      href: mailto:<ambrizjesus74@gmail.com>
