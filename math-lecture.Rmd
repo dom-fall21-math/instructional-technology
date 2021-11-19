@@ -94,7 +94,7 @@ $f(x)=log_{\frac{1}{3}}(x)\\[.25cm]$
     &\text{Asymptote: } \cssId{Step2-6}{ 0} 
 \end{align}
 
-<img id="Step1-7" src=".\images\geogebra-export.png" alt="Logarithms" width="300"/>
+<img id="Step2-7" src=".\images\geogebra-export.png" alt="Logarithms" width="300"/>
 
 
 <input type="button" class="button" onclick="ShowStep(this, 'Step2', 'Reset2');" value="Steps"/> 
@@ -117,7 +117,7 @@ $f(x)=log_4 (x-1)\\[.25cm]$
     &\text{Asymptote: } \cssId{Step3-6}{ 1} 
 \end{align}
 
-<img id="Step1-7" src=".\images\geogebra-export.png" alt="Logarithms" width="300"/>
+<img id="Step3-7" src=".\images\geogebra-export.png" alt="Logarithms" width="300"/>
 
 
 <input type="button" class="button" onclick="ShowStep(this, 'Step3', 'Reset3');" value="Steps"/> 
@@ -145,7 +145,7 @@ $f(x)=log_3 (x-2)\\[.25cm]$
     &\text{Asymptote: } \cssId{Step4-6}{ 2} 
 \end{align}
 
-<img id="Step1-7" src=".\images\geogebra-export.png" alt="Logarithms" width="300"/>
+<img id="Step4-7" src=".\images\geogebra-export.png" alt="Logarithms" width="300"/>
 
 
 <input type="button" class="button" onclick="ShowStep(this, 'Step4', 'Reset4');" value="Steps"/> 
@@ -168,7 +168,7 @@ $f(x)=log_{\frac{1}{2}}(x+9)+4\\[.25cm]$
     &\text{Asymptote: } \cssId{Step5-6}{ -9} 
 \end{align}
 
-<img id="Step1-7" src=".\images\geogebra-export.png" alt="Logarithms" width="300"/>
+<img id="Step5-7" src=".\images\geogebra-export.png" alt="Logarithms" width="300"/>
 
 
 <input type="button" class="button" onclick="ShowStep(this, 'Step5', 'Reset5');" value="Steps"/> 
