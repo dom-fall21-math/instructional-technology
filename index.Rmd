@@ -8,6 +8,9 @@ output:
     theme: sandstone
 ---
 
+<link href=".\scripts\stylesheet.css" rel="stylesheet">
+<link href=".\scripts\stylesheet.css" rel="stylesheet">
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```

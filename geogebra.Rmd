@@ -1,15 +1,15 @@
 ---
-title:
+title: GeoGebra
 output: 
   html_document:
     theme: sandstone
 ---
+
+<link href=".\scripts\stylesheet.css" rel="stylesheet">
 <script src="https://cdn.geogebra.org/apps/deployggb.js"></script>
-<script src="javascript.js"></script>
+<script src=".\scripts\javascript.js"></script>
 
 <!-- Section GeoGebra -->
-## GeoGebra
-
 
 <div id="ggbApplet1"></div>
 <br/><br/><br/>

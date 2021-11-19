@@ -1,10 +1,9 @@
 ---
-title:
+title: Dominican Math Lesson
 output: 
   html_document:
     theme: sandstone
 ---
-
 <!-- Scripts -->
 <link href=".\scripts\stylesheet.css" rel="stylesheet">
 <script src=".\scripts\javascript.js"></script>  
@@ -14,15 +13,6 @@ output:
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6">
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-
-<!-- Home Page Title -->
-
-</br></br>
-
-# The Dominican Math Lesson
-<div class="center">
-**By:** The Fibonacci Fighters
-</div> 
 
 <!-- Section Lesson 1 -->
 ## Lesson 1: Logarithms
