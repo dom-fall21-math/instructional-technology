@@ -7,7 +7,7 @@ navbar:
       href: math-lecture.html
     - text: "GeoGebra"
       href: geogebra.html
-    - text: "RMarkdown"
+    - text: "Source Code"
       href: rmarkdown.html
   right:
     - icon: fa-envelope fa-lg

@@ -1,12 +1,44 @@
+// Mathjax Paramatars
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
+    chtml: {
+      displayAlign: 'left'
+    },
+    startup: {
+      pageReady: function () {
+        //
+        //  Do the usual startup (which does a typeset).
+        //  When that is all done, un-hide the page.
+        //
+        return MathJax.startup.defaultPageReady().then(function () {
+          document.getElementById("hidden").disabled = true;
+        });
+      }
+    }
+  };
 
-
-$(function() {
-  $('.show-button').click(function() {
-    $('.content-div').not('#btn' + $(this).attr('target')).hide();
-    $('#btn' + $(this).attr('target')).fadeToggle(300);
-  });
-});
-
+// Button Function 
+(function () {
+    window.ShowStep = function (el, id) {
+      // Go through all the elements with id id-n and set the first non visible one to visible
+      const steps = document.querySelectorAll('[id^="' + id + '"]');
+      for (let i = 0; i < steps.length; i++) {
+         if (steps[i].style.visibility != 'visible') {
+           steps[i].style.visibility = 'visible';
+           break;
+         }
+       }
+      el.nextElementSibling.disabled = false;
+    }
+    window.ResetSteps = function (el, id, reset) {
+      el.disabled = false;
+      // Go through all the elements with id id-n and set them all to hidden
+      const steps = document.querySelectorAll('[id^="' + id + '"]');
+      for (let i = 0; i < steps.length; i++) {
+           steps[i].style.visibility = 'hidden';
+         }      
+    } 
+  })();
 
 // GeoGebra Parameters for Graph 
 // Learn more about all of Parameters at: https://wiki.geogebra.org/en/Reference:GeoGebra_App_Parameters
