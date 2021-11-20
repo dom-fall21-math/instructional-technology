@@ -200,6 +200,21 @@ $f(x)=log_{5}(x-2)+1\\[.25cm]$
 <input type="button" class="button" onclick="ShowStep(this, 'Step6', 'Reset6');" value="Steps"/> 
 <input type="button" class="button" onclick="ResetSteps(this, 'Step6', 'Reset6')" value="Reset" disabled="true"/><br/><br/>
 </div>
+
+
+Solve: $(x+1)^2$
+
+\begin{align}
+   \cssId{Step8-1}{(x+1)^2} &=\cssId{Step8-2}{(x+1)(x+1)} & \cssId{Step8-3}{\text{Step 1}}           \\[3px]
+    &\cssId{Step8-4}{{} = x(x+1) + 1(x+1)} & \cssId{Step8-5}{\text{Step 2}}   \\[3px]
+    &\cssId{Step8-6}{{} = (x^2+x) + (x+1)} & \cssId{Step8-7}{\text{Step 3}}    \\[3px]
+    &\cssId{Step8-8}{{} = x^2 + (x + x) + 1} & \cssId{Step8-9}{\text{Step 4}}  \\[3px]
+    &\cssId{Step8-10}{{} = x^2 + 2x + 1} & \cssId{Step8-11}{\text{Step 5}}
+\end{align}
+
+<input type="button" class="button" onclick="ShowStep(this, 'Step8', 'Reset8');" value="Steps"/> 
+<input type="button" class="button" onclick="ResetSteps(this, 'Step8', 'Reset8')" value="Reset" disabled="true"/><br/><br/>
+
 <!-- END OF RIGHT COLUMN -->
 
 ---
