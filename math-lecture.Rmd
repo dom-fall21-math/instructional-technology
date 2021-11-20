@@ -242,10 +242,10 @@ Solve: $(x+1)^2$
 <!-- Subsection Day 1 -->
 ## Useful Links
 
-- [GeoGebra Website] (https://www.geogebra.org/classic?lang=en)
-- [GeoGebra Lesson] (https://www.geogebra.org/m/YnPa7gd5)
-- [Rmarkdown] (https://rmarkdown.rstudio.com/lesson-1.html)
-- [Rmarkdown and GitHub] (https://resources.github.com/whitepapers/github-and-rstudio/)
+- [GeoGebra Website](https://www.geogebra.org/classic?lang=en)
+- [GeoGebra Lesson](https://www.geogebra.org/m/YnPa7gd5)
+- [Rmarkdown](https://rmarkdown.rstudio.com/lesson-1.html)
+- [Rmarkdown and GitHub](https://resources.github.com/whitepapers/github-and-rstudio/)
 
 <br/>
 
