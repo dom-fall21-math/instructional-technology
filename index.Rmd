@@ -34,3 +34,12 @@ Note that the `echo = FALSE` parameter was added to the code chunk to prevent pr
 
 <br/><br/><br/><br/><br/>
 <img src=".\images\qrplot.png" alt="Logarithms" width="300"/>
+
+<!--
+library(qrcode)
+png("qrplot.png")
+qrcode_gen("https://dom-fall21-math.github.io/instructional-technology/")
+dev.off()
+-->
+
+

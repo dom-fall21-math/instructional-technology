@@ -147,10 +147,10 @@ $f(x)=log_2 (x) \\[.25cm]$
 <br/><br/><br/><br/><br/>
 
 
-### Mathjax Paramatars
+### Mathjax Parameter
 <pre>
     <code class="language-javascript line-numbers"><!--
-    // Mathjax Paramatars
+    // Mathjax Parameter
   MathJax = {
     tex: {inlineMath: [['$', '$'], ['\\(', '\\)']]},
     chtml: {
